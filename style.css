@@ -1,0 +1,15 @@
+body {
+background-color: #257467;
+family-font: 'Comic Sans MS', cursive;
+text-align: center;
+padding-top: 10vh;
+}
+h1 {
+font-size: 3rem;
+color: #238501;
+text-shadow: 2px 2px 5px #ff1493;
+transition: transform 0.2s ease-in-out;
+}
+h1:hover {
+transform: scale(1.1) rotate(-2deg);
+}
