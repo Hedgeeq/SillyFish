@@ -13,3 +13,11 @@ transition: transform 0.2s ease-in-out;
 h1:hover {
 transform: scale(1.1) rotate(-2deg);
 }
+.box {
+  background-color: #ffebcd; /* light beige */
+  border: 3px dashed #ffa500; /* orange border */
+  padding: 40px; /* try changing this! */
+  margin: 20px auto; /* center it */
+  width: 60%;
+  font-size: 1.2rem;
+}
