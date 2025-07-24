@@ -9,3 +9,17 @@ box.addEventListener("click", () => {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   box.style.backgroundColor = randomColor;
 });
+const box = document.getElementById("click-box");
+const sound = document.getElementById("click-sound");
+
+const colors = ["#ffb6c1", "#98fb98", "#ffa07a", "#dda0dd", "#add8e6", "#f0e68c"];
+
+box.addEventListener("click", () => {
+  // Change color
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  box.style.backgroundColor = randomColor;
+
+  // Play sound
+  sound.currentTime = 0; // Rewind if clicked multiple times
+  sound.play();
+});
