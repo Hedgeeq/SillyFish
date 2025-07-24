@@ -21,3 +21,13 @@ transform: scale(1.1) rotate(-2deg);
   width: 60%;
   font-size: 1.2rem;
 }
+.color-box {
+  background-color: #90ee90; /* light green */
+  padding: 30px;
+  border-radius: 12px;
+  color: #004d00;
+  font-size: 1.4rem;
+  width: 70%;
+  margin: 30px auto;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
