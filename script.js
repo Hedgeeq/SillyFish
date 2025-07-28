@@ -1,4 +1,4 @@
-const hero = document.getElementById("hero");
+const hero = document.querySelector(".center-wrapper");
 const siteContent = document.getElementById("site-content");
 const fishButton = document.getElementById("image-button");
 
