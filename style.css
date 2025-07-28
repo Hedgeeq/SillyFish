@@ -36,18 +36,43 @@ transition: all 1s ease;
 /* hide content at first */
 #site-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-#site-content.reveal {
-  display: flex;
-}
-#site-content button {
-  margin: 0;
-  width: 150px;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;    /* Center horizontally */
+  gap: 32px;              /* Space between buttons */
+  margin-top: 40px;       /* Optional: space from top */
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-align: center;
+  padding: 0; /* Remove extra padding for tighter layout */
+  color: white;
 }
 
 #site-content.reveal {
   opacity: 1;
+}
+
+#site-content button {
+  width: 320px;
+  height: 70px;
+  border-radius: 40px;      /* Oval shape */
+  background: #512e91;
+  color: white;
+  border: none;
+  font-size: 2em;
+  font-family: inherit;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 0;               /* Remove default margin */
+  outline: none;
+}
+
+#site-content button:hover {
+  background: #6747b3;
+  transform: scale(1.03);
+}
+
+#site-content button:active {
+  background: #370e75;
+  transform: scale(0.98);
 }
