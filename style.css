@@ -12,8 +12,13 @@ html, body {
   align-items: center;
   height: 100vh; /* full screen height */
   background-color: #370e75;
+transition: all 1s ease;
 }
 
+.center-wrapper.move-up {
+  align-items: flex-start;
+  padding-top: 20px;
+}
 #image-button {
   background: none;
   border: none;
@@ -28,4 +33,15 @@ html, body {
 #image-button:hover img {
   transform: scale(1.1);
 }
+/* hide content at first */
+#site-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
 
+#site-content.reveal {
+  opacity: 1;
+}
