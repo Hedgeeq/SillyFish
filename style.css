@@ -17,7 +17,6 @@ body {
 background-color: #370e75;
  font-family: 'Comic Sans MS', cursive; /* playful font */
   text-align: center;
-  padding-top: 10vh;
 }
 .center-wrapper {
   display: flex;
