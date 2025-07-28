@@ -1,24 +1,23 @@
-/* Reset default spacing */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-/* This is the key container */
 .center-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* full screen height */
+  height: 100vh;
   background-color: #370e75;
-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .center-wrapper.move-up {
   align-items: flex-start;
   padding-top: 20px;
 }
+
 #image-button {
   background: none;
   border: none;
@@ -28,33 +27,36 @@ transition: all 1s ease;
 #image-button img {
   width: 400px;
   transition: transform 0.3s ease;
+  border-radius: 40px;
 }
 
 #image-button:hover img {
   transform: scale(1.1);
 }
-/* hide content at first */
+
+/* Hide content at first, fade in when .reveal */
 #site-content {
   display: flex;
-  flex-direction: column; /* Stack vertically */
-  align-items: center;    /* Center horizontally */
-  gap: 32px;              /* Space between buttons */
-  margin-top: 40px;       /* Optional: space from top */
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
   opacity: 0;
   transition: opacity 1s ease;
   text-align: center;
-  padding: 0; /* Remove extra padding for tighter layout */
   color: white;
+  padding: 0;
 }
 
 #site-content.reveal {
   opacity: 1;
 }
 
+/* Rounded stacked buttons */
 #site-content button {
   width: 320px;
   height: 70px;
-  border-radius: 40px;      /* Oval shape */
+  border-radius: 40px;
   background: #512e91;
   color: white;
   border: none;
@@ -63,7 +65,7 @@ transition: all 1s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,0.10);
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  margin: 0;               /* Remove default margin */
+  margin: 0;
   outline: none;
 }
 
