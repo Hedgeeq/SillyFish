@@ -1,26 +1,31 @@
-#image-button {
-  background: none;
-  border: none;
+/* Reset default spacing */
+html, body {
+  margin: 0;
   padding: 0;
-  cursor: pointer;
+  height: 100%;
 }
 
-#image-button img {
-margin: 0 auto;
-  width: 250px; /* or any size you want */
-  transition: transform 0.3s ease;
-}
-#image-button:hover img {
-  transform: scale(1.1);
-}
-body {
-background-color: #370e75;
- font-family: 'Comic Sans MS', cursive; /* playful font */
-  text-align: center;
-}
+/* This is the key container */
 .center-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* full screen height */
+  background-color: #370e75;
 }
+
+#image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#image-button img {
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+#image-button:hover img {
+  transform: scale(1.1);
+}
+
