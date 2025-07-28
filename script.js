@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Optional: disable further clicks
       fishButton.disabled = true;
     });
-  }
-});
   } else {
     console.error('Element(s) missing:', { fishButton, hero, siteContent });
   }
