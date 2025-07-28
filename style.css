@@ -19,3 +19,9 @@ background-color: #370e75;
   text-align: center;
   padding-top: 10vh;
 }
+.hedgefishlogo {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 100vh;           /* take full screen height */
+}
