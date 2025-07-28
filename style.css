@@ -35,11 +35,17 @@ transition: all 1s ease;
 }
 /* hide content at first */
 #site-content {
-  opacity: 0;
-  transition: opacity 1s ease;
-  text-align: center;
-  padding: 50px;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+#site-content.reveal {
+  display: flex;
+}
+#site-content button {
+  margin: 0;
+  width: 150px;
 }
 
 #site-content.reveal {
