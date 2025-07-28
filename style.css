@@ -6,6 +6,7 @@
 }
 
 #image-button img {
+margin: 0 auto;
   width: 150px; /* or any size you want */
   transition: transform 0.3s ease;
 }
