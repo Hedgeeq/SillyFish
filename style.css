@@ -1,43 +1,15 @@
-body {
-background-color: #257467;
-family-font: 'Comic Sans MS', cursive;
-text-align: center;
-padding-top: 10vh;
-}
-h1 {
-font-size: 3rem;
-color: #238501;
-text-shadow: 2px 2px 5px #ff1493;
-transition: transform 0.2s ease-in-out;
-}
-h1:hover {
-transform: scale(1.1) rotate(-2deg);
-}
-.box {
-  background-color: #ffebcd; /* light beige */
-  border: 3px dashed #ffa500; /* orange border */
-  padding: 40px; /* try changing this! */
-  margin: 20px auto; /* center it */
-  width: 60%;
-  font-size: 1.2rem;
-}
-.color-box {
-  background-color: #add8e6;
-  padding: 30px;
-  border-radius: 12px;
-  font-size: 1.4rem;
-  width: 70%;
-  margin: 30px auto;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-#click-box {
+#image-button {
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-#click-box:hover {
-  background-color: #87cefa;
+#image-button img {
+  width: 150px; /* or any size you want */
+  transition: transform 0.3s ease;
 }
 
+#image-button:hover img {
+  transform: scale(1.1);
+}
