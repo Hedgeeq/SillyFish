@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (fishButton && hero && siteContent) {
     fishButton.addEventListener("click", () => {
-      hero.classList.add("move-up");
-      siteContent.classList.add("reveal");
-      fishButton.disabled = true; // Optional: disable further clicks
+      fishButton.classList.add("slide-up"); // slide up and fade out fish button
+      siteContent.classList.add("reveal");  // fade in site content
+      // Optional: disable further clicks
+      fishButton.disabled = true;
     });
+  }
+});
   } else {
     console.error('Element(s) missing:', { fishButton, hero, siteContent });
   }
