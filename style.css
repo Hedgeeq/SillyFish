@@ -28,6 +28,3 @@ html, body {
   height: auto;
   width: 500px;
 }
-#sillyfish.slide-up {
-  transform: translate(-50%, -50%) translateY(-140px);
-}
