@@ -1,4 +1,4 @@
 document.getElementById("sillyfish").addEventListener("click", function() {
-  document.querySelector(".center-wrapper").classList.add("up");
+  document.querySelector(".center-wrapper").classList.add("slide-up");
 });
 
