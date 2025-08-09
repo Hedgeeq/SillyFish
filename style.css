@@ -17,7 +17,7 @@ html, body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translateY(0);
-  transition: transform 0.8s cubic-bezier(.75,-0.01,.31,1.02);
+  transition: transform 0.8s cubic-bezier(.75,1.02,.50,1.35);
 }
 #sillyfish {
   background: none;
