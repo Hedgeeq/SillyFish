@@ -1,13 +1,19 @@
 html, body {
   height: 100%;
+  margin: 0;
   overflow: hidden;
   background-color: #370e75;
 }
   .center-wrapper {
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
     height: 100vh;
-    transition: all 1s ease;
+    transition: all 0.8s ease; /* so changes animate */
+}
+.center-wrapper.up {
+  align-items: flex-start; /* pushes to top */
+  padding-top: 20px; /* optional gap from top */
 }
 #sillyfish {
   background: none;
