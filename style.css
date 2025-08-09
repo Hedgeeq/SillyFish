@@ -13,8 +13,6 @@ html, body {
 #sillyfish {
   background: none;
   border: none;
-  position: fixed;
-  center: 0;
   cursor: pointer;
 }
 #sillyfish img {
