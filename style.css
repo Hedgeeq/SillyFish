@@ -37,7 +37,7 @@ html, body {
 #image-button {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.8s cubic-bezier(.75,-0.01,.31,1.02);
+  transition: transform 0.8s cubic-bezier(.75,-0.01,.41,1.02,.24,2.01);
 }
 
 /* After .slide-up is added, image button slides up and fades out */
