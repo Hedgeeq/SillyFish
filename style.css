@@ -11,7 +11,7 @@ html, body {
     height: 100vh;
     transition: all 0.8s ease; /* so changes animate */
 }
-.center-wrapper.up {
+.center-wrapper.slide-up {
   padding-top: 20px; /* optional gap from top */
   position: absolute;
   left: 50%;
@@ -28,6 +28,6 @@ html, body {
   height: auto;
   width: 500px;
 }
-#fish-button.slide-up {
+#sillyfish.slide-up {
   transform: translate(-50%, -50%) translateY(-140px);
 }
