@@ -1,13 +1,12 @@
 html, body {
   height: 100%;
   overflow: hidden;
+  background-color: #370e75;
 }
   .center-wrapper {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #370e75;
     transition: all 1s ease;
 }
 #sillyfish {
