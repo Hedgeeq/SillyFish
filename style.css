@@ -37,13 +37,12 @@ html, body {
 #image-button {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.8s cubic-bezier(.75,-0.01,.31,1.02), opacity 0.8s;
+  transition: transform 0.8s cubic-bezier(.75,-0.01,.31,1.02);
 }
 
 /* After .slide-up is added, image button slides up and fades out */
 #image-button.slide-up {
   transform: translateY(-120px); /* adjust as needed */
-  opacity: 100;
 }
 
 /* Fade-in for site-content */
