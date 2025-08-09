@@ -23,77 +23,35 @@ overflow: hidden;
   cursor: pointer;
 }
 
-#image-button img {
-  width: 400px;
-  transition: transform 0.3s ease;
-  border-radius: 40px;
-}
-
-#image-button:hover img {
-  transform: scale(1.1);
-}
-/* Initial position: image button is at normal spot */
+/* Start: fish button visible, site content hidden */
 #image-button {
-  transform: translateY(0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(0);
   opacity: 1;
-  transition: transform 0.8s cubic-bezier(.75,-0.01,.31,3.02,);
-}
-
-/* After .slide-up is added, image button slides up and fades out */
-#image-button.slide-up {
-  transform: translateY(-120px); /* adjust as needed */
-}
-
-/* Fade-in for site-content */
-#site-content {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-#site-content.reveal {
-  opacity: 1;
-}
-/* Hide content at first, fade in when .reveal */
-#site-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  margin-top: 40px;
-  opacity: 0;
-  transition: opacity 1s ease;
-  text-align: center;
-  color: white;
-  padding: 0;
-}
-
-#site-content.reveal {
-  opacity: 1;
-}
-
-/* Rounded stacked buttons */
-#site-content button {
-  width: 320px;
-  height: 70px;
-  border-radius: 40px;
-  background: #512e91;
-  color: white;
+  transition: 
+    transform 0.8s cubic-bezier(.75,-0.01,.31,1.02),
+    opacity 0.8s cubic-bezier(.75,-0.01,.31,1.02);
+  z-index: 2;
+  background: transparent;
   border: none;
-  font-size: 2em;
-  font-family: inherit;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  margin: 0;
-  outline: none;
 }
 
-#site-content button:hover {
-  background: #6747b3;
-  transform: scale(1.03);
+#image-button.slide-up {
+  transform: translate(-50%, -50%) translateY(-140px);
+  opacity: 0;
 }
 
-#site-content button:active {
-  background: #370e75;
-  transform: scale(0.98);
+/* Site content starts hidden, fades in */
+#site-content {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(.75,-0.01,.31,1.02);
+  z-index: 1;
+  position: relative;
+}
+
+#site-content.visible {
+  opacity: 1;
 }
