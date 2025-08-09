@@ -1,1 +1,23 @@
-
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #370e75;
+    transition: all 1s ease;
+}
+#sillyfish {
+  background: none;
+  border: none;
+  position: fixed;
+  center: 0;
+  cursor: pointer;
+}
+#sillyfish img {
+  height: auto;
+  width: 500px;
+}
