@@ -15,7 +15,7 @@ html, body {
   padding-top: 20px; /* optional gap from top */
   position: absolute;
   top: 70%;
-  transition: transform 0.8s cubic-bezier(.75,1.02,.50,1.35);
+  transition: transform 0.8s cubic-bezier(.75,1.02);
 }
 #sillyfish {
   background: none;
