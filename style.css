@@ -12,10 +12,8 @@ html, body {
     transition: all 0.8s ease; /* so changes animate */
 }
 .center-wrapper.slide-up {
-  padding-top: 20px; /* optional gap from top */
-  position: absolute;
-  top: 70%;
-  transition: transform 0.8s cubic-bezier(.75,1.02);
+  align-items: flex-start; /* pushes fish to top */
+  padding-top: 20px;       /* little gap from top */
 }
 #sillyfish {
   background: none;
