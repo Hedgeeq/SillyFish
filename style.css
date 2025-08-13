@@ -23,3 +23,12 @@ html, body {
   height: auto;
   width: 500px;
 }
+#homebuttons {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 100vh
+  transition: all 0.8s ease;
+}
+#homebuttons.fade-in {
+  opacity: 
