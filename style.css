@@ -12,8 +12,7 @@ html, body {
     transition: all 0.8s ease; /* so changes animate */
 }
 .center-wrapper.slide-up {
-  align-items: flex-start; /* pushes fish to top */
-  padding-top: 20px;       /* little gap from top */
+  transform: translateY(-40vh); /* moves up smoothly */
 }
 #sillyfish {
   background: none;
