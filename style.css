@@ -32,10 +32,3 @@ html, body {
   margin-top: 40px;
 }
 
-.visible {
-  opacity: 1;
-}
-
-.hidden {
-  display: none;
-}
