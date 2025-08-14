@@ -34,27 +34,18 @@ html, body {
   padding-left: 20px;
 }
 .homebuttons {
+  opacity: 0;
+  transition: opacity 1s ease;
   display: flex;
-  flex-direction: column; /* stack buttons vertically */
-  justify-content: center; /* center vertically */
-  align-items: center; /* center horizontally */
-  height: 100vh;
-  gap: 20px; /* space between buttons */
-  opacity: 0; /* start hidden */
-  transition: opacity 0.8s ease;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 40px;
 }
 
-.homebuttons.fade-in {
+.homebuttons.visible {
   opacity: 1;
 }
 
-.homebuttons button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.homebuttons img {
-  width: 150px; /* adjust size */
-  height: auto;
+.hidden {
+  display: none;
 }
