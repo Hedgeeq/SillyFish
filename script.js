@@ -4,7 +4,7 @@ const homeButtons = document.querySelector(".homebuttons");
 
 sillyfish.addEventListener("click", () => {
   // Slide fish up
-  centerWrapper.classList.add("slide-up");
+  centerWrapper.classList.add("center-wrapper.slide-up");
 
   // Wait until slide animation finishes
   setTimeout(() => {
