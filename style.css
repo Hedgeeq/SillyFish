@@ -32,11 +32,12 @@ html, body {
   border: none;
   cursor: pointer;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 .homebuttons img {
   height: auto;
   width: 400px;
+}
 .homebuttons.fade-in {
   opacity: 1;
 }
