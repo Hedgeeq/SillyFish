@@ -32,10 +32,10 @@ html, body {
   margin-top: 40px;
 }
 
-.homebuttons.visible {
+.homebuttons-visible {
   opacity: 1;
 }
 
-.hidden {
+.homebuttons-hidden {
   display: none;
 }
