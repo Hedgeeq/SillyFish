@@ -25,11 +25,11 @@ html, body {
 }
 .homebuttons {
   position: fixed; /* stays in place */
-  top: 20%; /* distance from top of screen */
-  left: 20px; /* distance from left edge */
+  top: 50%; /* distance from top of screen */
+  left: 40px; /* distance from left edge */
   display: flex;
   flex-direction: column; /* stack vertically */
-  gap: 15px; /* space between buttons */
+  gap: 40px; /* space between buttons */
   opacity: 0; /* start invisible */
   transition: opacity 0.8s ease;
   padding-left: 20px;
@@ -39,7 +39,7 @@ html, body {
 }
 .homebuttons img {
   height: auto;
-  width: 400px;
+  width: 1000px;
 }
 .homebuttons.fade-in {
   opacity: 1;
