@@ -23,6 +23,16 @@ html, body {
   height: auto;
   width: 500px;
 }
+
+#about {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
 #homebuttons {
   display: flex;
   justify-content: right;
@@ -31,4 +41,5 @@ html, body {
   transition: all 0.8s ease;
 }
 #homebuttons.fade-in {
-  opacity: 
+  opacity: 100
+}
