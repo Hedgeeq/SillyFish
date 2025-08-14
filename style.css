@@ -33,13 +33,28 @@ html, body {
   left: 0;
   padding-left: 20px;
 }
-#homebuttons {
+.homebuttons {
   display: flex;
-  justify-content: right;
-  align-items: right;
-  height: 100vh
-  transition: all 0.8s ease;
+  flex-direction: column; /* stack buttons vertically */
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  height: 100vh;
+  gap: 20px; /* space between buttons */
+  opacity: 0; /* start hidden */
+  transition: opacity 0.8s ease;
 }
-#homebuttons.fade-in {
-  opacity: 100
+
+.homebuttons.fade-in {
+  opacity: 1;
+}
+
+.homebuttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.homebuttons img {
+  width: 150px; /* adjust size */
+  height: auto;
 }
