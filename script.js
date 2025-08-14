@@ -6,7 +6,7 @@ document.getElementById('sillyfish').addEventListener('click', function() {
   setTimeout(() => {
     document.querySelector('.homebuttons').classList.remove("hidden"); // show container
     setTimeout(() => {
-    document.querySelector('.homebuttons').classList.add("visible"); // fade in
+    document.querySelector('.homebuttons-visible').classList.add("visible"); // fade in
     }, 50); // tiny delay to trigger opacity transition
   }, 800); // matches .slide-up transition time
 });
