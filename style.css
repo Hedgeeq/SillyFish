@@ -25,7 +25,7 @@ html, body {
 }
 .homebuttons {
   position: fixed; /* stays in place */
-  top: 30%; /* distance from top of screen */
+  top: 50%; /* distance from top of screen */
   left: 80px; /* distance from left edge */
   display: flex;
   flex-direction: column; /* stack vertically */
