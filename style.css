@@ -26,13 +26,12 @@ html, body {
 .homebuttons {
   position: fixed; /* stays in place */
   top: 50%; /* distance from top of screen */
-  left: 40px; /* distance from left edge */
+  left: 70px; /* distance from left edge */
   display: flex;
   flex-direction: column; /* stack vertically */
-  gap: 40px; /* space between buttons */
+  gap: 60px; /* space between buttons */
   opacity: 0; /* start invisible */
   transition: opacity 0.8s ease;
-  padding-left: 20px;
   background: none;
   border: none;
   cursor: pointer;
