@@ -29,7 +29,7 @@ html, body {
   left: 300px; /* distance from left edge */
   display: flex;
   flex-direction: column; /* stack vertically */
-  gap: 60px; /* space between buttons */
+  gap: 80px; /* space between buttons */
   opacity: 0; /* start invisible */
   transition: opacity 0.8s ease;
   background: none;
