@@ -12,5 +12,23 @@ document.getElementById('sillyfish').addEventListener('click', function() {
   }, 800); // delay matches your CSS .slide-up animation
 setTimeout(() => {
   const lavientrance = document.querySelector('.lavientrance');
-  lavientrance.classList.
+  lavientrance.classList.add('slide-in');
+}, 500);
+  const lavisit = document.getElementId('lavisit');
+  let clickCount = 0;
+  const clickSound = new Audio('assets/sounds/squeakers.mp3');
+// When slide finishes, sit down
+lavientrance.addEventListener('transitionend', () => {
+  lavisit.src = 'assets/images/lavisit.gif';
+});
+
+// Click changes mood
+lavisit.addEventListener('click', () => {
+  clickSound.play();
+  clickCount++;
+
+  if (clickCount === 10) {
+    lavisit.src = 'assets/images/laviangry.gif';
+  }
+});
 });
