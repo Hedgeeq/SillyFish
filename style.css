@@ -1,64 +1,78 @@
+/* Base */
 html, body {
   height: 100%;
   margin: 0;
   overflow: hidden;
   background-color: #370e75;
 }
-  .center-wrapper {
-    display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically */
-    height: 100vh;
-    transition: all 0.8s ease; /* so changes animate */
+
+/* Fish button layout */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: transform 0.8s ease;
 }
 .center-wrapper.slide-up {
-  transform: translateY(-40vh); /* moves up smoothly */
+  transform: translateY(-40vh);
 }
+
 #sillyfish {
   background: none;
   border: none;
   cursor: pointer;
 }
 #sillyfish img {
-  height: auto;
   width: 500px;
+  height: auto;
+  display: block;
 }
+
+/* Home buttons (fixed left stack) */
 .homebuttons {
-  position: fixed; /* stays in place */
-  top: 40%; /* distance from top of screen */
-  left: 300px; /* distance from left edge */
+  position: fixed;
+  top: 40%;
+  left: 300px;
+  transform: translateY(-50%); /* vertical centering */
   display: flex;
-  flex-direction: column; /* stack vertically */
-  gap: 80px; /* space between buttons */
-  opacity: 0; /* start invisible */
+  flex-direction: column;
+  gap: 80px;
+  opacity: 0;                   /* start hidden */
   transition: opacity 0.8s ease;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 .homebuttons img {
-  height: auto;
   width: 100px;
+  height: auto;
 }
 .homebuttons.fade-in {
   opacity: 1;
 }
+
+/* Lavi entrance */
 .lavientrance {
   position: fixed;
   bottom: 30%;
-  left: -300px;
-  display: flex;
+  left: -300px;                 /* off-screen start */
   transition: left 1s ease;
 }
 .lavientrance img {
-  height: auto;
   width: 200px;
+  height: auto;
 }
-.lavientrance.slide-left {
+.lavientrance.slide-in {
+  left: 110px;                  /* slide into place */
+}
+
+/* Lavi sitting image (hidden until entrance ends) */
+.lavisit {
+  position: fixed;
+  bottom: 30%;
   left: 110px;
+  display: none;                /* shown after entrance ends */
 }
-
-
-
-
+.lavisit img {
+  width: 200px;
+  height: auto;
+}
 
