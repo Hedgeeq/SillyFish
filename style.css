@@ -43,7 +43,18 @@ html, body {
 .homebuttons.fade-in {
   opacity: 1;
 }
-
+.lavientrance {
+  position: fixed;
+  bottom: 30%
+  right: 300px
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+#lavirun {
+  
 
 
 
