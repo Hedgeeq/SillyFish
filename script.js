@@ -29,7 +29,7 @@ sillyfishBtn.addEventListener('click', () => {
 
 // 2) When Lavi finishes sliding in: swap to sitting image
 lavientrance.addEventListener('transitionend', (e) => {
-  if (e.propertyName !== 'left') return; // only on left transition
+  if (e.propertyName !== 'right') return; // only on left transition
 
   // Hide entrance, show sit
   lavientrance.style.display = 'none';
