@@ -10,4 +10,7 @@ document.getElementById('sillyfish').addEventListener('click', function() {
       homeButtons.classList.add("fade-in"); // trigger fade animation
     }, 50);
   }, 800); // delay matches your CSS .slide-up animation
+setTimeout(() => {
+  const lavientrance = document.querySelector('.lavientrance');
+  lavientrance.classList.
 });
