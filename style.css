@@ -57,7 +57,7 @@ html, body {
   height: auto;
   width: 200px;
 }
-#lavirun {
+.lavientrance.slide-left {
   transform: transform: translateX(-40vh);
 }
 
