@@ -53,7 +53,7 @@ html, body {
 .lavientrance {
   position: fixed;
   bottom: 30%;
-  left: -300px;                 /* off-screen start */
+  right: -300px;                 /* off-screen start */
   transition: left 1s ease;
 }
 .lavientrance img {
@@ -61,14 +61,14 @@ html, body {
   height: auto;
 }
 .lavientrance.slide-in {
-  left: 110px;                  /* slide into place */
+  right: 110px;                  /* slide into place */
 }
 
 /* Lavi sitting image (hidden until entrance ends) */
 .lavisit {
   position: fixed;
   bottom: 30%;
-  left: 110px;
+  right: 110px;
   display: none;                /* shown after entrance ends */
 }
 .lavisit img {
@@ -79,7 +79,7 @@ html, body {
   display: none;
   position: fixed;
   bottom: 30%;
-  left: 110px;
+  right: 110px;
   width: 200px;
   height: auto;
 }
