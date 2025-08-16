@@ -14,7 +14,7 @@ setTimeout(() => {
   const lavientrance = document.querySelector('.lavientrance');
   lavientrance.classList.add('slide-in');
 }, 500);
-  const lavisit = document.getElementId('lavisit');
+  const lavisit = document.getElementById('lavisit');
   let clickCount = 0;
   const clickSound = new Audio('assets/sounds/squeakers.mp3');
 // When slide finishes, sit down
@@ -32,7 +32,6 @@ lavisit.addEventListener('click', () => {
   }
 document.addEventListener('mousemove', (e) => {
   if (clickCount >= 10) {
-  document.addEventListener('mousemove', (event) => {
   const rect = fish.getBoundingClientRect(); // fish position + size
   const fishX = rect.left + rect.width / 2;  // center of fish
   const fishY = rect.top + rect.height / 2;  // center of fish
