@@ -30,5 +30,29 @@ lavisit.addEventListener('click', () => {
   if (clickCount === 10) {
     lavisit.src = 'assets/images/laviangry.gif';
   }
-});
+document.addEventListener('mousemove', (e) => {
+  if (clickCount >= 10) {
+  document.addEventListener('mousemove', (event) => {
+  const rect = fish.getBoundingClientRect(); // fish position + size
+  const fishX = rect.left + rect.width / 2;  // center of fish
+  const fishY = rect.top + rect.height / 2;  // center of fish
+
+  const dx = event.clientX - fishX;
+  const dy = event.clientY - fishY;
+
+  if (Math.abs(dx) > Math.abs(dy)) {
+    // Left or Right
+    if (dx > 0) {
+      fish.src = "assets/images/laviavoidright.gif";
+    } else {
+      fish.src = "assets/images/laviavoidleft.gif";
+    }
+  } else {
+    // Up or Down
+    if (dy > 0) {
+      fish.src = "assets/images/laviavoiddown.gif";
+    } else {
+      fish.src = "assets/images/laviavoidup.gif";
+    }
+  }
 });
