@@ -1,57 +1,60 @@
-document.getElementById('sillyfish').addEventListener('click', function() {
-  // Slide up the fish
+const sillyfishBtn = document.getElementById('sillyfish');
+const lavientrance = document.querySelector('.lavientrance');
+const lavientranceImg = document.getElementById('lavientrance-img');
+const lavisitImg = document.getElementById('lavisit-img');
+const clickSound = document.getElementById('lavi-squeak');
+
+let clickCount = 0;
+
+// Step 1: Fish button slide + show menu
+sillyfishBtn.addEventListener('click', () => {
   document.querySelector('.center-wrapper').classList.add('slide-up');
-  
-  // Wait until slide-up finishes (matches CSS transition time)
+
   setTimeout(() => {
-    const homeButtons = document.querySelector('.homebuttons');
-    homeButtons.classList.remove("hidden"); // make sure they show
-    setTimeout(() => {
-      homeButtons.classList.add("fade-in"); // trigger fade animation
-    }, 50);
-  }, 800); // delay matches your CSS .slide-up animation
-setTimeout(() => {
-  const lavientrance = document.querySelector('.lavientrance');
-  lavientrance.classList.add('slide-in');
-}, 500);
-  const lavisit = document.getElementById('lavisit');
-  let clickCount = 0;
-  const clickSound = new Audio('assets/sounds/squeakers.mp3');
-// When slide finishes, sit down
-lavientrance.addEventListener('transitionend', () => {
-  lavisit.src = 'assets/images/lavisit.gif';
+    document.querySelector('.homebuttons').classList.add('fade-in');
+  }, 800);
+
+  // Trigger Lavi entrance
+  setTimeout(() => {
+    lavientrance.classList.add('slide-in');
+  }, 500);
 });
 
-// Click changes mood
-lavisit.addEventListener('click', () => {
+// Step 2: Once entrance animation finishes → switch to sit
+lavientrance.addEventListener('transitionend', () => {
+  lavientranceImg.style.display = "none"; // hide entrance gif
+  lavisitImg.style.display = "block"; // show sit gif
+});
+
+// Step 3: Click on Lavi to play sound & track mood
+lavisitImg.addEventListener('click', () => {
+  clickSound.currentTime = 0;
   clickSound.play();
   clickCount++;
 
-  if (clickCount === 10) {
-    lavisit.src = 'assets/images/laviangry.gif';
-  }
-document.addEventListener('mousemove', (e) => {
   if (clickCount >= 10) {
-  const rect = fish.getBoundingClientRect(); // fish position + size
-  const fishX = rect.left + rect.width / 2;  // center of fish
-  const fishY = rect.top + rect.height / 2;  // center of fish
+    lavisitImg.src = "assets/images/laviangry.gif";
+  }
+});
+
+// Step 4: Angry → avoid mouse
+document.addEventListener('mousemove', (event) => {
+  if (clickCount < 10) return;
+
+  const rect = lavisitImg.getBoundingClientRect();
+  const fishX = rect.left + rect.width / 2;
+  const fishY = rect.top + rect.height / 2;
 
   const dx = event.clientX - fishX;
   const dy = event.clientY - fishY;
 
   if (Math.abs(dx) > Math.abs(dy)) {
-    // Left or Right
-    if (dx > 0) {
-      fish.src = "assets/images/laviavoidright.gif";
-    } else {
-      fish.src = "assets/images/laviavoidleft.gif";
-    }
+    lavisitImg.src = dx > 0
+      ? "assets/images/laviavoidright.gif"
+      : "assets/images/laviavoidleft.gif";
   } else {
-    // Up or Down
-    if (dy > 0) {
-      fish.src = "assets/images/laviavoiddown.gif";
-    } else {
-      fish.src = "assets/images/laviavoidup.gif";
-    }
+    lavisitImg.src = dy > 0
+      ? "assets/images/laviavoiddown.gif"
+      : "assets/images/laviavoidup.gif";
   }
 });
