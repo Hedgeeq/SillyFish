@@ -46,7 +46,7 @@ html, body {
 .lavientrance {
   position: fixed;
   bottom: 30%;
-  left: 110px;
+  left: -300px;
   display: flex;
   transition: left 1s ease;
 }
@@ -55,7 +55,7 @@ html, body {
   width: 200px;
 }
 .lavientrance.slide-left {
-  transform: left: 30px;
+  left: 110px;
 }
 
 
