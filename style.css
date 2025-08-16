@@ -54,7 +54,7 @@ html, body {
   transition: all 0.8s ease;
 }
 #lavirun {
-  
+  transform: transform: translateX(-40vh);
 
 
 
