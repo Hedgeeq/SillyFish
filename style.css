@@ -46,19 +46,16 @@ html, body {
 .lavientrance {
   position: fixed;
   bottom: 30%
-  right: 300px
+  left: 110px
   display: flex;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.8s ease;
+  transition: left 1s ease;
 }
 .lavientrance img {
   height: auto;
   width: 200px;
 }
 .lavientrance.slide-left {
-  transform: transform: translateX(-40vh);
+  transform: left: 30px;
 }
 
 
