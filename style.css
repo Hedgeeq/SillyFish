@@ -45,8 +45,8 @@ html, body {
 }
 .lavientrance {
   position: fixed;
-  bottom: 30%
-  left: 110px
+  bottom: 30%;
+  left: 110px;
   display: flex;
   transition: left 1s ease;
 }
