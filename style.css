@@ -70,6 +70,7 @@ html, body {
   bottom: 30%;
   right: 110px;
   display: none;                /* shown after entrance ends */
+  cursor: pointer;
 }
 .lavisit img {
   width: 200px;
