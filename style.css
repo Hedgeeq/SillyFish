@@ -53,9 +53,13 @@ html, body {
   cursor: pointer;
   transition: all 0.8s ease;
 }
+.lavientrance img {
+  height: auto;
+  width: 200px;
+}
 #lavirun {
   transform: transform: translateX(-40vh);
-
+}
 
 
 
