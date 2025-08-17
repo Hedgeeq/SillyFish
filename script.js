@@ -3,10 +3,8 @@ const sillyfishBtn    = document.getElementById('sillyfish');
 const centerWrapper   = document.querySelector('.center-wrapper');
 
 const lavientrance    = document.querySelector('.lavientrance');
-const lavientranceImg = document.getElementById('lavientrance-img');
 
 const lavisit         = document.querySelector('.lavisit');
-const lavisitImg      = document.getElementById('lavisit-img');
 
 const clickSound      = document.getElementById('lavi-squeak');
 
@@ -37,13 +35,13 @@ lavientrance.addEventListener('transitionend', (e) => {
 });
 
 // 3) Clicking Lavi: squeak + mood counter → angry at 10
-lavisitImg.addEventListener('click', () => {
+lavisit.addEventListener('click', () => {
   try { clickSound.currentTime = 0; } catch (_) {}
   clickSound.play?.();
 
   clickCount++;
   if (clickCount >= 10) {
-    lavisitImg.src = 'assets/images/laviangry.gif';
+    lavisit.src = 'assets/images/laviangry.gif';
   }
 });
 
@@ -51,7 +49,7 @@ lavisitImg.addEventListener('click', () => {
 document.addEventListener('mousemove', (event) => {
   if (clickCount < 10) return;
 
-  const rect = lavisitImg.getBoundingClientRect();
+  const rect = lavisit.getBoundingClientRect();
   const cx = rect.left + rect.width  / 2;
   const cy = rect.top  + rect.height / 2;
 
@@ -60,11 +58,11 @@ document.addEventListener('mousemove', (event) => {
 
   // Horizontal vs vertical dominance
   if (Math.abs(dx) > Math.abs(dy)) {
-    lavisitImg.src = dx > 0
+    lavisit.src = dx > 0
       ? 'assets/images/laviavoidright.gif'
       : 'assets/images/laviavoidleft.gif';
   } else {
-    lavisitImg.src = dy > 0
+    lavisit.src = dy > 0
       ? 'assets/images/laviavoiddown.gif'
       : 'assets/images/laviavoidup.gif';
   }
