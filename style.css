@@ -83,3 +83,5 @@ html, body {
   width: 400px;
   height: auto;
 }
+.about-scroll {
+  display: hidden;
