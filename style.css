@@ -60,7 +60,7 @@ html, body {
 .lavientrance {
   position: fixed;
   bottom: 30%;
-  right: -310px;                 /* off-screen start */
+  right: -320px;                 /* off-screen start */
   transition: right 0.8s ease;
 }
 .lavientrance img {
