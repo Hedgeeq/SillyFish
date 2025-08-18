@@ -38,32 +38,4 @@ lavientrance.addEventListener('transitionend', (e) => {
 lavisit.addEventListener('click', () => {
   try { clickSound.currentTime = 0; } catch (_) {}
   clickSound.play?.();
-
-  clickCount++;
-  if (clickCount >= 10) {
-    lavisit.src = 'assets/images/laviangry.gif';
-  }
-});
-
-// 4) When angry, change image based on mouse quadrant
-document.addEventListener('mousemove', (event) => {
-  if (clickCount < 10) return;
-
-  const rect = lavisit.getBoundingClientRect();
-  const cx = rect.left + rect.width  / 2;
-  const cy = rect.top  + rect.height / 2;
-
-  const dx = event.clientX - cx;
-  const dy = event.clientY - cy;
-
-  // Horizontal vs vertical dominance
-  if (Math.abs(dx) > Math.abs(dy)) {
-    lavisit.src = dx > 0
-      ? 'assets/images/laviavoidright.gif'
-      : 'assets/images/laviavoidleft.gif';
-  } else {
-    lavisit.src = dy > 0
-      ? 'assets/images/laviavoiddown.gif'
-      : 'assets/images/laviavoidup.gif';
-  }
 });
