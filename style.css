@@ -37,12 +37,12 @@ html, body {
   transform: translateY(-50%); /* vertical centering */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: -20px;
   opacity: 0;                   /* start hidden */
   transition: opacity 0.8s ease;
 }
 .homebuttons img {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 .homebuttons button {
