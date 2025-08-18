@@ -37,7 +37,7 @@ html, body {
   transform: translateY(-50%); /* vertical centering */
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
   opacity: 0;                   /* start hidden */
   transition: opacity 0.8s ease;
 }
