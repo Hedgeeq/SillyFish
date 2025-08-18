@@ -46,6 +46,8 @@ html, body {
   height: auto;
   display: block;
   border: none;
+  background: none;
+  cursor: pointer;
 }
 .homebuttons.fade-in {
   opacity: 1;
@@ -63,14 +65,14 @@ html, body {
   height: auto;
 }
 .lavientrance.slide-in {
-  right: 110px;                  /* slide into place */
+  right: 210px;                  /* slide into place */
 }
 
 /* Lavi sitting image (hidden until entrance ends) */
 .lavisit {
   position: fixed;
   bottom: 30%;
-  right: 110px;
+  right: 210px;
   display: none;                /* shown after entrance ends */
   cursor: pointer;
 }
