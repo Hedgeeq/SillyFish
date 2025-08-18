@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #370e75;
+}
+
+.waiting-room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#waiting_room {
+  width: 600px;
+  height: auto;
+  display: block;
+}
+#status {
+  position: fixed;
+  
