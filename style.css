@@ -45,6 +45,7 @@ html, body {
   width: 100px;
   height: auto;
   display: block;
+  border: none;
 }
 .homebuttons.fade-in {
   opacity: 1;
@@ -58,11 +59,11 @@ html, body {
   transition: right 1s ease;
 }
 .lavientrance img {
-  width: 500px;
+  width: 400px;
   height: auto;
 }
 .lavientrance.slide-in {
-  right: 210px;                  /* slide into place */
+  right: 110px;                  /* slide into place */
 }
 
 /* Lavi sitting image (hidden until entrance ends) */
@@ -74,6 +75,6 @@ html, body {
   cursor: pointer;
 }
 .lavisit img {
-  width: 200px;
+  width: 400px;
   height: auto;
 }
