@@ -42,7 +42,7 @@ html, body {
   transition: opacity 0.8s ease;
 }
 .homebuttons img {
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 .homebuttons button {
