@@ -76,12 +76,3 @@ html, body {
   width: 200px;
   height: auto;
 }
-.laviangry img {
-  display: none;
-  position: fixed;
-  bottom: 30%;
-  right: 110px;
-  width: 200px;
-  height: auto;
-}
-
